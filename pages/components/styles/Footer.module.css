@@ -1,0 +1,27 @@
+.container {
+    padding: 1.5rem;
+    color: white;
+    background-color: #222;
+}
+
+.contact {
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact h1 {
+    margin: 0.5rem auto;
+}
+
+.contact a {
+    display: block;
+}
+
+.by {
+    display: flex;
+    justify-content: center;
+}
+
+.by a {
+    text-decoration: underline;
+}

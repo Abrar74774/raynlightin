@@ -1,0 +1,13 @@
+.efficient {
+    display: flex;
+    flex-direction: column;
+}
+
+.efficient > div {
+    padding: 1.5rem;
+}
+
+.pic-desc {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,17 @@
+.background {
+    display: flex;
+    justify-content: center;
+    padding: 10rem 5rem;
+    align-items: center;
+    background: center url("../../../public/lighting_over_esc.jpg");
+    background-size: cover;
+}
+
+.viewBtn {
+    border: none;
+    padding: 1rem 2rem;
+    background-color: #000000bb;
+    color: white;
+    font-size: 1.1rem;
+    box-shadow: 2px 2px 16px #ffffff26;
+}
