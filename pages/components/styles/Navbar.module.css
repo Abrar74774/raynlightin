@@ -6,6 +6,7 @@
     z-index: 99999;
     top: 0;
     background-color: #00000072;
+    transition: transform 0.3s;
 }
 
 .nav-container .logo{
