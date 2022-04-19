@@ -1,12 +1,16 @@
 .nav-container {
-    display: flex;
     width: 100%;
     padding: 1rem;
     position: fixed;
     z-index: 99999;
     top: 0;
     background-color: #00000072;
-    transition: transform 0.3s;
+    color: #fdfdfd;
+    transition: transform 0.3s, height 0.3s;
+}
+
+.nav-menu {
+    flex-direction: column;
 }
 
 .nav-container .logo{

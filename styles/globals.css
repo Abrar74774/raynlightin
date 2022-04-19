@@ -18,6 +18,10 @@ a {
   box-sizing: border-box;
 }
 
+.flex {
+  display: flex;
+}
+
 .center {
   display: flex;
   align-items: center;
