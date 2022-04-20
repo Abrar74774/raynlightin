@@ -13,6 +13,12 @@
     flex-direction: column;
 }
 
+.nav-menu ul li {
+    list-style: none;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
 .nav-container .logo{
     color: #fdfdfd;
 }

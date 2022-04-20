@@ -1,16 +1,20 @@
 .container {
-    padding: 1.5rem;
     color: white;
     background-color: #222;
 }
 
 .contact {
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
 }
 
 .contact h1 {
-    margin: 0.5rem auto;
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.contact h1:not(:first-child) {
+    margin-top: 2rem;
 }
 
 .contact a {
