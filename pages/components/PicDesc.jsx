@@ -1,16 +1,16 @@
 import styles from './styles/Efficient.module.css'
+import fluorescent from '../../public/fluo.jpg'
 import Image from 'next/image'
 
 export default function Efficient(props) {
     return (
         <section className={styles.efficient}>
             
-            <div style={{position: 'relative', height: '50vh'}}>
+            <div>
                 <Image
-                    src={'/fluo.jpg'}
+                    src={fluorescent}
                     alt={"Fluorescent Lamp"}
-                    layout='fill'
-                    objectFit='contain'
+                    layout='intrinsic'
                 />
             </div>
             <div>
