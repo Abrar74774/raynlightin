@@ -1,23 +1,25 @@
-import styles from './styles/Efficient.module.css'
-import fluorescent from '../../public/fluo.jpg'
+import styles from './styles/PicDesc.module.css'
 import Image from 'next/image'
 
-export default function Efficient(props) {
+export default function PicDesc(props) {
     return (
-        <section className={styles.efficient}>
+        <section className={styles["pic-desc"]}>
             
-            <div>
+            <div className={styles["pic-container"]}>
                 <Image
-                    src={fluorescent}
-                    alt={"Fluorescent Lamp"}
-                    layout='intrinsic'
+                    src={props.picSrc}
+                    alt={props.picAlt}
+                    layout='fill'
+                    objectFit='cover'
+                    objectPosition={props.picObjectPosition || "center 100%"}
                 />
             </div>
             <div>
-                <h2>Efficient</h2>
+                {props.desc}
+                {/* <h2>Efficient</h2>
                 <p>
                     RayN manufactures the best Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum obcaecati voluptatem in, delectus deleniti assumenda quidem tempora labore aspernatur facere maiores amet quibusdam. Inventore assumenda obcaecati voluptate, enim sunt numquam.
-                </p>
+                </p> */}
             </div>
         </section>
     )

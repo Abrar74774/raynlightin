@@ -1,0 +1,18 @@
+.pic-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.pic-desc > div {
+    padding: 1.5rem;
+}
+
+.pic-container {
+    position: relative;
+    height: 50vh;
+}
+
+/* .pic-desc {
+    display: flex;
+    justify-content: center;
+} */
