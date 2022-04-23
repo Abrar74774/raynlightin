@@ -9,9 +9,20 @@
 
 .pic-container {
     position: relative;
-    height: 50vh;
+    height: 40vh;
 }
 
+.pic-container > div {
+    padding: 5rem;
+}
+
+.desc {
+    margin-bottom: 2rem;
+}
+
+.desc h1, .desc h2, .desc h3 {
+    margin: 0 auto;
+}
 /* .pic-desc {
     display: flex;
     justify-content: center;
