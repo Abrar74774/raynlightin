@@ -25,7 +25,7 @@ export default function Hero(props) {
                         Shining Your Way Forward, Efficiently
                     </h1>
                 </div>
-                <button className={styles.view}>View Listing</button>
+                <button className="view transparent">View Listing</button>
             </div>
         </header>
     )

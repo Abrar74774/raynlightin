@@ -1,12 +1,8 @@
 .pic-desc {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
 }
 
-.pic-desc > div {
-    padding: 1rem 0;
-}
 
 .pic-container {
     position: relative;
@@ -16,24 +12,13 @@
 
 .desc {
     margin-bottom: 2rem;
+    padding: 1rem;
 }
 
 .desc h1, .desc h2, .desc h3 {
     margin: 0 auto;
 }
 
-.view {
-    padding: 0.5rem 1rem;
-    font-size: inherit;
-    border: none;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.view:hover {
-    background-color: #c5c5c5;
-}
 /* .pic-desc {
     display: flex;
     justify-content: center;

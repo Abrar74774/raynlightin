@@ -29,15 +29,30 @@ a {
 }
 
 .view {
-  padding: 0.7rem 1.2rem;
+  padding: 0.7rem 1.5rem;
   font-size: inherit;
-  border: none;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 16px -2px #00000022; */
+  border: 2px solid #000;
   background-color: white;
-  box-shadow: 0 2px 16px -2px #727272;
   color: black;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 }
+
 .view:hover {
-  background-color: #c5c5c5;
+  background-color: #000;
+  color: white;
 }
+
+.transparent {
+  background-color: inherit;
+  color: white;
+  border-color: white;
+}
+
+.transparent:hover {
+  background-color: white;
+  color: black;
+}
+
