@@ -4,13 +4,6 @@ import styles from './styles/Hero.module.css'
 export default function Hero(props) {
     return(
         <header className={styles.hero}>
-            <div className={styles.heroImage}>
-                <Image
-                    src={heroPic}
-                    alt={"RayN Lighting"}
-                    layout='intrinsic'
-                />
-            </div>
             <div className={styles.container}>
                 <div className={styles.titleContainer}>
                     <h1 className={styles.title}>
@@ -26,6 +19,14 @@ export default function Hero(props) {
                     </h1>
                 </div>
                 <button className="view transparent">View Listing</button>
+            </div>
+            <div className={styles.heroImage}>
+                <Image
+                    src={heroPic}
+                    alt={"RayN Lighting"}
+                    layout='fill'
+                    objectFit='cover'
+                />
             </div>
         </header>
     )

@@ -1,12 +1,14 @@
 .pic-desc {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 
 .pic-container {
     position: relative;
     height: 40vh;
+    width: 100%;
 }
 
 
@@ -17,6 +19,25 @@
 
 .desc h1, .desc h2, .desc h3 {
     margin: 0 auto;
+}
+
+@media screen and (min-width: 786px) {
+    .pic-desc:nth-child(even) {
+        flex-direction: row;
+    }
+    
+    .pic-desc:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .pic-container {
+        position: relative;
+        width: 50%;
+    }
+
+    .desc {
+        width: 50%;
+    }
 }
 
 /* .pic-desc {

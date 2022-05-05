@@ -29,15 +29,15 @@ a {
 }
 
 .view {
-  padding: 0.7rem 1.5rem;
+  padding: 0.6rem 1.5rem;
   font-size: inherit;
-  border-radius: 8px;
+  border-radius: 12px;
   /* box-shadow: 0 2px 16px -2px #00000022; */
-  border: 2px solid #000;
+  border: 1px solid #000;
   background-color: white;
   color: black;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .view:hover {

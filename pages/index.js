@@ -3,7 +3,7 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Efficient from './components/Efficient'
 import LongLasting from './components/LongLasting'
-import View from './components/View'
+import Newsletter from './components/Newsletter'
 import Footer from './components/Footer'
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <Hero/>
       <Efficient/>
       <LongLasting/>
-      <View/>
+      <Newsletter/>
       <Footer/>
     </div>
   )
