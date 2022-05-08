@@ -6,6 +6,7 @@ export default function Navbar(props) {
     const [away, setAway] = useState(false);
     const [prevScroll, setPrevScroll] = useState(0);
     const [menuOpen, setMenuOpen] = useState(false);
+    const [widerScreen, setWiderScreen] = useState(window.innerWidth > 786);
 
     const handleScroll = (e) => {
         const currentScroll = window.pageYOffset;
@@ -14,21 +15,30 @@ export default function Navbar(props) {
         setPrevScroll(currentScroll); // TO DO : Fix finicky navbar : Maybe DOne???
     }
 
+    const handleResize = (e) => {
+        setWiderScreen(window.innerWidth > 786);
+        //console.log(windowWidth)
+    }
+
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll',handleScroll);
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('scroll',handleScroll);
+            window.removeEventListener('resize', handleResize);
+        }
     })
     return (
-        <div className={`${styles["nav-container"]} ${menuOpen? styles["nav-menu"]: ""}`} style={{transform: away? 'translateY(-100%)' : null}}>
+        <div className={`${styles["nav-container"]} ${(menuOpen || widerScreen)? styles["nav-menu"]: ""}`} style={{transform: away? 'translateY(-100%)' : null}}>
             <div className="flex">
                 <div className={styles.logo}>Ray_N</div>
-                <div className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
+                <div style={{display: widerScreen ? "none" : "block"}} className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
             </div>
-            {menuOpen &&
+            {(menuOpen || widerScreen) &&
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>

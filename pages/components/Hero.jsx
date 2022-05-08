@@ -17,8 +17,8 @@ export default function Hero(props) {
                         <br /> 
                         Shining Your Way Forward, Efficiently
                     </h1>
+                    <button className={`view transparent ${styles.btn}`}>View Listing</button>
                 </div>
-                <button className="view transparent">View Listing</button>
             </div>
             <div className={styles.heroImage}>
                 <Image
