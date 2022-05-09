@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function PicDesc(props) {
     return (
-        <section className={styles["pic-desc"]}>
+        <section className={`${styles["pic-desc"]} container`}>
             <div className={styles["pic-container"]}>
                 <Image
                     src={props.picSrc}
