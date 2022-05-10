@@ -30,24 +30,26 @@ export default function Navbar(props) {
         }
     })
     return (
-        <div className={`container ${styles["nav-container"]} ${(menuOpen || widerScreen)? styles["nav-menu"]: ""}`} style={{transform: away? 'translateY(-100%)' : null}}>
-            <div className="flex">
-                <div className={styles.logo}>Ray_N</div>
-                <div className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+        <div className={styles["nav-container"]} style={{transform: away? 'translateY(-100%)' : null}}>
+            <div className={`container ${(menuOpen || widerScreen)? styles["nav-menu"]: ""}`}>
+                <div className="flex">
+                    <div className={styles.logo}>Ray_N</div>
+                    <div className={styles.hamburger} onClick={() => setMenuOpen(!menuOpen)}>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
+                {(menuOpen || widerScreen) &&
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">View</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                }
             </div>
-            {(menuOpen || widerScreen) &&
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">View</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            }
         </div>
     )
 }

@@ -19,6 +19,7 @@
 
 .desc h1, .desc h2, .desc h3 {
     margin: 0 auto;
+    border-bottom: 1px solid black;
 }
 
 @media screen and (min-width: 786px) {
@@ -38,7 +39,16 @@
 
     .desc {
         width: 50%;
+        padding: 3rem;
     }
+
+    .view {
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 786px) {
+
 }
 
 /* .pic-desc {

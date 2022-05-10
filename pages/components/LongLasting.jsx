@@ -8,7 +8,7 @@ export default function LongLasting(props) {
             picObjectPosition="center 20%"
             desc={
                 <>
-                <h2>Long Lasting</h2>
+                <h1>Long Lasting</h1>
                     <p>
                        Reliability is our best Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum obcaecati voluptatem in, delectus deleniti assumenda quidem tempora labore aspernatur facere maiores amet quibusdam. Inventore assumenda obcaecati voluptate, enim sunt numquam.
                    </p>
