@@ -15,7 +15,7 @@ export default function View(props) {
             />
             <div className={styles.subscribe}>
                 <div className="container">
-                    <h2>Newsletter</h2>
+                    <h1>Newsletter</h1>
                     <p>Subscribe to our newsletter for latest updates</p>
                     <div className={styles.form}>
                         <label htmlFor="email"></label>

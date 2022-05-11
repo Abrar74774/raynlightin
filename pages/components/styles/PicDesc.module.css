@@ -23,6 +23,9 @@
 }
 
 @media screen and (min-width: 786px) {
+    .pic-desc {
+        margin-bottom: 3rem;
+    }
     .pic-desc:nth-child(even) {
         flex-direction: row;
     }
@@ -32,7 +35,6 @@
     }
 
     .pic-container {
-        position: relative;
         width: 50%;
         height: 75vh;
     }
@@ -45,10 +47,6 @@
     .view {
         margin: 2rem auto;
     }
-}
-
-@media screen and (min-width: 786px) {
-
 }
 
 /* .pic-desc {
