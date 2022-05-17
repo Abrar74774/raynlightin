@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    margin: 3rem auto;
 }
 
 
@@ -24,7 +25,7 @@
 
 @media screen and (min-width: 786px) {
     .pic-desc {
-        margin-bottom: 3rem;
+        margin: 5rem auto;
     }
     .pic-desc:nth-child(even) {
         flex-direction: row;

@@ -5,6 +5,7 @@ export default function Efficient(props) {
         <PicDesc
             picSrc="/fluo.jpg"
             picAlt="Efficient Lighting"
+            picObjectPosition="center 90%"
             desc={
                 <>
                     <h1>Efficient</h1>

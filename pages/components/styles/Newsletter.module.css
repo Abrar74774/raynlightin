@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     justify-content: center;
-    padding: 10rem 0;
+    height: 100vh;
     align-items: center;
     background: center url("../../../public/lighting_over_esc.jpg");
     background-size: cover;
@@ -12,7 +12,7 @@
     z-index: 1;
     width: 100%;
     border: none;
-    padding: 2rem 2rem;
+    padding: 8rem 1rem;
     background-color: #000000bb;
     color: white;
     font-size: 1rem;
@@ -25,8 +25,9 @@
 
 .form {
     display: flex;
+    flex-direction: column;
 }
-
+/* TODO: FIX THE NEWSLETTER ON MOBILE*/
 .form input {
     border-radius: 12px 0 0 12px;
     width: 75%;
@@ -43,7 +44,12 @@
 }
 
 @media screen and (min-width: 786px) {
+    .form {
+        flex-direction: row;
+    }
+
     .subscribe {
-        padding: 5rem 2rem;
+        width: 75%;
+        padding: 5rem 10rem;
     }
 }
