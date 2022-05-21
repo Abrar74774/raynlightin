@@ -29,23 +29,32 @@
 }
 /* TODO: FIX THE NEWSLETTER ON MOBILE*/
 .form input {
-    border-radius: 12px 0 0 12px;
-    width: 75%;
+    border-radius: 12px;
+    width: 100%;
     border: 2px solid white;
     padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-.submit {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left: none;
-    padding: 0.5rem;
-    width: 25%;
-}
+
 
 @media screen and (min-width: 786px) {
     .form {
         flex-direction: row;
+    }
+
+    .form input {
+        width: 75%;
+        border-radius: 12px 0 0 12px;
+    }
+
+    .submit {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-left: none;
+        padding: 0.5rem;
+        width: 25%;
     }
 
     .subscribe {

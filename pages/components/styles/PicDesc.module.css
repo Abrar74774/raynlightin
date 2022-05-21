@@ -15,15 +15,20 @@
 
 .desc {
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 1rem 0.1rem;
+    text-align: justify;
 }
 
 .desc h1, .desc h2, .desc h3 {
     margin: 0 auto;
-    border-bottom: 1px solid black;
 }
 
 @media screen and (min-width: 786px) {
+
+    .desc h1, .desc h2, .desc h3 {
+        border-bottom: 1px solid black;
+    }
+
     .pic-desc {
         margin: 5rem auto;
     }
