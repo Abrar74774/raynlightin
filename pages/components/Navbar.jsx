@@ -29,7 +29,7 @@ export default function Navbar(props) {
             window.removeEventListener('scroll',handleScroll);
             window.removeEventListener('resize', handleResize);
         }
-    })
+    }, [handleScroll])
     return (
         <div className={styles["nav-container"]} style={{transform: away? 'translateY(-100%)' : null}}>
             <div className={`container ${(menuOpen || widerScreen)? styles["nav-menu"]: ""}`}>
