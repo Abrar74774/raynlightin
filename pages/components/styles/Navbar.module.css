@@ -1,12 +1,10 @@
 .nav-container {
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     position: fixed;
     z-index: 99999;
+    background-color: #111;
     top: 0;
-    background-color: #00000072;
-    color: #fdfdfd;
     transition: transform 0.3s, height 0.3s;
 }
 
@@ -26,9 +24,6 @@
     padding: 0.5rem 0;
 }
 
-.nav-container .logo{
-    color: #fdfdfd;
-}
 
 .nav-container .hamburger {
     margin-left: auto;

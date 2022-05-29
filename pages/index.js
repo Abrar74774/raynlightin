@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 
 export default function Home() {
   return (
-    <div>
+    <div className='home'>
       <Head>
         <title>Homepage | Ray_N Lighting</title>
         <meta name="description" content="Welcome to Ray_N lighting, the best manufacturer of high quality lighting components (this website is for demonstration only)" />

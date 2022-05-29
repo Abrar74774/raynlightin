@@ -4,60 +4,58 @@
     justify-content: center;
     height: 100vh;
     align-items: center;
-    background: center url("../../../public/lighting_over_esc.jpg");
-    background-size: cover;
 }
 
-.subscribe {
+.newsletter-form {
     z-index: 1;
     width: 100%;
-    border: none;
+    border: 1px solid #333;
     padding: 8rem 1rem;
-    background-color: #000000bb;
     color: white;
     font-size: 1rem;
-    box-shadow: 2px 2px 16px #ffffff26;
 }
 
-.subscribe h2 {
+.newsletter-form h2 {
     margin:0;
 }
 
-.form {
+.input-area {
     display: flex;
     flex-direction: column;
 }
 /* TODO: FIX THE NEWSLETTER ON MOBILE*/
-.form input {
+.input-area input {
     border-radius: 12px;
     width: 100%;
     border: 2px solid white;
     padding: 1rem;
     text-align: center;
+    font-size: 1rem;
     margin-bottom: 1rem;
 }
 
 
 
 @media screen and (min-width: 786px) {
-    .form {
+    .input-area {
         flex-direction: row;
     }
 
-    .form input {
+    .input-area input {
         width: 75%;
         border-radius: 12px 0 0 12px;
+        text-align: left;
+        margin-bottom: 0;
     }
 
     .submit {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         border-left: none;
-        padding: 0.5rem;
         width: 25%;
     }
 
-    .subscribe {
+    .newsletter-form {
         width: 75%;
         padding: 5rem 10rem;
     }

@@ -13,11 +13,10 @@ export default function View(props) {
                 objectFit="cover"
                 objectPosition="center"
             />
-            <div className={styles.subscribe}>
+            <div className={styles["newsletter-form"]}>
                 <h1>Newsletter</h1>
                 <p>Subscribe to our newsletter for latest updates</p>
-                <div className={styles.form}>
-                    <label htmlFor="email"></label>
+                <div className={styles["input-area"]}>
                     <input
                         id="email"
                         type="email"

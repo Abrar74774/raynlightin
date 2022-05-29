@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react/cjs/react.development"
+import { useEffect, useState } from "react"
 import styles from "./styles/Navbar.module.css"
 
 
@@ -9,15 +9,16 @@ export default function Navbar(props) {
     const [widerScreen, setWiderScreen] = useState(false);
 
     const handleScroll = (e) => {
-        const currentScroll = window.pageYOffset;
-        if (currentScroll > prevScroll) setAway(true);
-        else setAway(false);
-        setPrevScroll(currentScroll); // TO DO : Fix finicky navbar : Maybe DOne???
+        if (!widerScreen) {
+            const currentScroll = window.pageYOffset;
+            if (currentScroll > prevScroll) setAway(true);
+            else setAway(false);
+            setPrevScroll(currentScroll); // TO DO : Fix finicky navbar : Maybe DOne???
+        }
     }
 
     const handleResize = (e) => {
         setWiderScreen(window.innerWidth > 786);
-        //console.log(windowWidth)
     }
 
     useEffect(() => {
