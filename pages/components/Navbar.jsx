@@ -8,20 +8,20 @@ export default function Navbar(props) {
     const [menuOpen, setMenuOpen] = useState(false);
     const [widerScreen, setWiderScreen] = useState(false);
 
-    const handleScroll = (e) => {
-        if (!widerScreen) {
-            const currentScroll = window.pageYOffset;
-            if (currentScroll > prevScroll) setAway(true);
-            else setAway(false);
-            setPrevScroll(currentScroll); // TO DO : Fix finicky navbar : Maybe DOne???
-        }
-    }
-
+    
     const handleResize = (e) => {
         setWiderScreen(window.innerWidth > 786);
     }
-
+    
     useEffect(() => {
+        const handleScroll = (e) => {
+            if (!widerScreen) {
+                const currentScroll = window.pageYOffset;
+                if (currentScroll > prevScroll) setAway(true);
+                else setAway(false);
+                setPrevScroll(currentScroll); // TO DO : Fix finicky navbar : Maybe DOne???
+            }
+        }
         setWiderScreen(window.innerWidth > 786);
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('resize', handleResize);
@@ -29,7 +29,7 @@ export default function Navbar(props) {
             window.removeEventListener('scroll',handleScroll);
             window.removeEventListener('resize', handleResize);
         }
-    }, [handleScroll])
+    }, [prevScroll, widerScreen])
     return (
         <div className={styles["nav-container"]} style={{transform: away? 'translateY(-100%)' : null}}>
             <div className={`container ${(menuOpen || widerScreen)? styles["nav-menu"]: ""}`}>
