@@ -6,6 +6,10 @@
     margin: 3rem auto;
 }
 
+.reverse {
+    flex-direction: column-reverse;
+}
+
 
 .pic-container {
     position: relative;
@@ -33,14 +37,14 @@
     .pic-desc {
         margin: 5rem auto;
     }
-    .pic-desc:nth-child(even) {
+    .pic-desc{
         flex-direction: row;
     }
-    
-    .pic-desc:nth-child(odd) {
+
+    .reverse {
         flex-direction: row-reverse;
     }
-
+    
     .pic-container {
         width: 50%;
         height: 75vh;

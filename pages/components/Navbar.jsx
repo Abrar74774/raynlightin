@@ -30,6 +30,7 @@ export default function Navbar(props) {
             window.removeEventListener('resize', handleResize);
         }
     }, [prevScroll, widerScreen])
+    
     return (
         <div className={styles["nav-container"]} style={{transform: away? 'translateY(-100%)' : null}}>
             <div className={`container ${(menuOpen || widerScreen)? styles["nav-menu"]: ""}`}>

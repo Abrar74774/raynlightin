@@ -6,6 +6,7 @@ export default function LongLasting(props) {
             picSrc="/lamp_simple.jpg"
             picAlt="Long lasting products"
             picObjectPosition="center 20%"
+            swap
             desc={
                 <>
                 <h1>Long Lasting</h1>

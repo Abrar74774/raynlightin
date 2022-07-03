@@ -1,5 +1,8 @@
 import styles from './styles/PicDesc.module.css'
 import Image from 'next/image'
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from 'react-intersection-observer';
+import { useEffect } from 'react';
 
 export default function PicDesc(props) {
     //const [scroll, setScroll] = useState(0); // **WILL BE USED FOR PARALLAX
@@ -15,10 +18,22 @@ export default function PicDesc(props) {
     //         window.removeEventListener('scroll', handleScroll);
     //     }
     // })
+
+    const control = useAnimation();
+    const [ref, inView] = useInView({
+        threshold:1,
+        rootMargin: '20%'
+    });
+
+    useEffect(() => {
+        if (inView) {
+            control.start({opacity: 1});
+        } 
+    }, [control, inView]);
     return (
         <section>
             <div className="container">
-                <div className={styles["pic-desc"]}>
+                <div className={`${styles["pic-desc"]} ${props.swap ? styles.reverse : ""}`}>
                     <div className={styles["pic-container"]}>
                         <Image
                             
@@ -30,9 +45,14 @@ export default function PicDesc(props) {
                             //objectPosition={ `center ${100 - scroll/10}%`}//props.picObjectPosition || "center 80%"}
                         />
                     </div>
-                    <div className={styles.desc}>
+                    <motion.div
+                        ref={ref}
+                        initial={{ opacity: 0, transition:{duration: 2}}}
+                        animate={control}
+                        className={styles.desc}
+                    >
                         {props.desc}
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
