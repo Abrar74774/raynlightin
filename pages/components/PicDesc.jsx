@@ -34,9 +34,15 @@ export default function PicDesc(props) {
         <section>
             <div className="container">
                 <div className={`${styles["pic-desc"]} ${props.swap ? styles.reverse : ""}`}>
-                    <div className={styles["pic-container"]}>
+                    <motion.div
+                        ref={ref}
+                        initial={{ opacity: 0}} 
+                        transition={{duration:0.7}}
+                        animate={control}
+                        className={styles["pic-container"]}
+                    >
                         <Image
-                            
+                            priority
                             src={props.picSrc}
                             alt={props.picAlt}
                             layout='fill'
@@ -44,10 +50,11 @@ export default function PicDesc(props) {
                             objectPosition={props.picObjectPosition || 'center center'}
                             //objectPosition={ `center ${100 - scroll/10}%`}//props.picObjectPosition || "center 80%"}
                         />
-                    </div>
+                    </motion.div>
                     <motion.div
                         ref={ref}
-                        initial={{ opacity: 0, transition:{duration: 2}}}
+                        initial={{ opacity: 0}}
+                        transition = {{duration: 0.7, delay: 0.5}}
                         animate={control}
                         className={styles.desc}
                     >

@@ -6,14 +6,8 @@ export default function View(props) {
         <section 
             className={styles.background}
         >
-            <Image
-                src="/lighting_over_escalator.jpg"
-                alt=""
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-            />
-            <div className={styles["newsletter-form"]}>
+            
+            <div className={`${styles["newsletter-form"]}`}>
                 <h1>Newsletter</h1>
                 <p>Subscribe to our newsletter for latest updates</p>
                 <div className={styles["input-area"]}>

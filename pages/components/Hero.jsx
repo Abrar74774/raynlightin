@@ -5,7 +5,7 @@ export default function Hero(props) {
     return(
         <header className={styles.hero}>
             <div className={styles.container}>
-                <div className={styles.titleContainer}>
+                <div className={`${styles.titleContainer} container`}>
                     <h1 className={styles.title}>
                         <span className={styles.name}>
                             Ray_N{' '}

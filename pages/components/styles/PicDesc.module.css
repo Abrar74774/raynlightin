@@ -29,37 +29,43 @@
 }
 
 @media screen and (min-width: 786px) {
-
+    
     .desc h1, .desc h2, .desc h3 {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid #333;
     }
-
+    
     .pic-desc {
         margin: 5rem auto;
     }
-    .pic-desc{
-        flex-direction: row;
-    }
-
-    .reverse {
-        flex-direction: row-reverse;
-    }
     
     .pic-container {
-        width: 50%;
         height: 75vh;
     }
-
-    .desc {
-        width: 50%;
-        padding: 3rem;
-    }
-
+    
+    
     .view {
         margin: 2rem auto;
     }
 }
 
+
+@media screen and (min-width: 1000px) {
+    .desc {
+        width: 50%;
+        padding: 3rem;
+    }
+    .pic-container {
+        width: 50%;
+        height: 75vh;
+    }
+    .pic-desc{
+        flex-direction: row;
+    }
+    
+    .reverse {
+        flex-direction: row-reverse;
+    }
+}
 /* .pic-desc {
     display: flex;
     justify-content: center;
